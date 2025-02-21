@@ -1,0 +1,357 @@
+body {
+    /*Inheritence*/
+    margin: 0px;
+    padding-top: 80px;
+    padding-left: 96px;
+    padding-bottom: 240px;
+    padding-right: 24px;
+    background-color: rgb(248, 248, 248);
+  }
+
+  p {
+    font-family: Roboto, Arial;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .search-bar {
+    padding-left: 10px;
+    font-size: 16px;
+
+    height: 34px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(189, 190, 191);
+    flex: 1;
+    width: 0px;
+
+    box-shadow: inset 1px 2px 3px rgb(3, 0, 0, 0.05);
+  }
+
+  .search-bar::placeholder {
+    font-family: Roboto, Arial;
+    font-size: 15px;
+  }
+
+  .thumbnail {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: right;
+    border: none;
+    border-radius: 10px;
+
+  }
+
+
+
+  .video-title {
+    font-size: 14px;
+    margin-top: 0px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 500;
+
+  }
+
+  .video-stats,
+  .video-author {
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+
+  }
+
+  .video-author {
+    margin-bottom: 2px;
+  }
+
+  .video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+  }
+
+  .profile {
+    display: inline-block;
+    border-radius: 50px;
+    width: 36px;
+  }
+
+  .thumbnail-row {
+    margin-bottom: 10px;
+    position: relative;
+  }
+
+  .video-time {
+    position: absolute;
+    background-color: black;
+    color: white;
+    right: 5px;
+    bottom: 8px;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 12px;
+    letter-spacing: 0.35px;
+    line-height: 12px;
+    font-family: Roboto, Arial;
+    border-radius: 2px;
+  }
+
+  .video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 20px;
+  }
+
+  p {
+    font-family: Roboto, Arial;
+  }
+
+  .header {
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0px;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(217, 210, 210);
+    border-bottom-style: solid;
+    z-index: 1;
+
+  }
+
+  .left-section {
+    display: flex;
+    align-items: center;
+    width: 200px;
+  }
+
+  .middle-section {
+    display: flex;
+    max-width: 500px;
+    align-items: center;
+    flex: 1;
+  }
+
+  .right-section {
+    width: 180px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+
+  .hamburger-menu {
+    height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .youtube-logo {
+    height: 20px;
+  }
+
+  .search {
+    height: 24px;
+
+
+  }
+
+  .voice {
+    height: 24px;
+    background-color: rgb(255, 253, 253);
+
+  }
+
+  .search-button {
+    height: 37px;
+    width: 64px;
+    border-radius: 0px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(189, 190, 191);
+    background-color: rgb(249, 249, 250);
+    margin-left: -1px;
+    margin-right: 10px;
+
+
+  }
+
+  .voice-search-button {
+    height: 38px;
+    width: 40px;
+    border-radius: 19px;
+    border: none;
+    background-color: rgb(252, 252, 251);
+  }
+
+  .upload {
+    height: 24px;
+  }
+
+  .youtube-apps {
+    height: 24px;
+  }
+
+  .notifications {
+    height: 24px;
+  }
+
+  .notification-icon-container {
+    position: relative;
+  }
+
+  .notifications-count {
+    position: absolute;
+    background-color: rgb(203, 2, 2);
+    top: -2px;
+    right: -5px;
+    font-size: 11px;
+    color: white;
+    font-family: Roboto, Arial;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+
+    border-radius: 10px;
+  }
+
+  .user-profile {
+    width: 25px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 28px;
+  }
+
+  .sidebar {
+    position: fixed;
+    left: 0px;
+    top: 55px;
+    bottom: 0px;
+    width: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-top: 5px;
+    z-index: 2;
+    background-color: white;
+  }
+
+  .sidebar-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 74px;
+    cursor: pointer;
+    justify-content: center;
+
+
+  }
+
+  .sidebar-link:hover {
+    background-color: #f9f9f9;
+    ;
+  }
+
+  .sidebar-link img {
+    height: 24px;
+    margin-bottom: 5px;
+  }
+
+  .sidebar-link div {
+    font-family: Roboto, Arial;
+    font-size: 10px;
+    line-height: 15px;
+    font-weight: 400;
+  }
+
+  .youtube-logo,
+  .video-author,
+  .video-stats,
+  .thumbnail,
+  .video-title,
+  .search-button,
+  .hamburger-menu,
+  .notifications,
+  .youtube-apps,
+  .voice-search-button,
+  .upload,
+  .user-profile,
+  .notifications-count:hover {
+    cursor: pointer;
+  }
+
+  .search-button,
+  .voice-search-button,
+  .upload-icon-container,
+  .notification-icon-container,
+  .youtube-apps-icon-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-button .tooltip,
+  .voice-search-button .tooltip,
+  .upload-icon-container .tooltip,
+  .notification-icon-container .tooltip,
+  .youtube-apps-icon-container .tooltip {
+    background-color: grey;
+    border-radius: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    color: white;
+    font-family: Roboto, Arial;
+    font-size: 12px;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.15s;
+    bottom: -40px;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  .search-button:hover .tooltip,
+  .voice-search-button:hover .tooltip,
+  .upload-icon-container:hover .tooltip,
+  .notification-icon-container:hover .tooltip,
+  .youtube-apps-icon-container:hover .tooltip {
+    opacity: 1;
+  }
+
+
+
+  @media (max-width:750px) {
+    .video-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+
+
+  @media (min-width:751px) and (max-width:999px) {
+    .video-grid {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+
+  @media (min-width:1000px) {
+    .video-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
